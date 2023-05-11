@@ -26,6 +26,7 @@
 .sounds-section {
   position: relative;
   padding: 60px 5vw;
+  background-color: black;
 }
 
 .section-title {
@@ -35,7 +36,9 @@
   font-size: 10.25rem;
   margin-bottom: 10.25rem;
 }
-
+.sounds-section {
+  color: #fff;
+}
 .product-container {
   display: flex;
   justify-content: space-evenly;
@@ -104,7 +107,7 @@
   padding: 100px;
 }
 
-/* ----------------MIDDLE SECTIONNNNNNNNNN------------------- */
+/* ----------------MIDDLE SECTION------------------- */
 .middle-section {
   width: 100%;
   height: 100%;
@@ -452,6 +455,118 @@ link-boxes = footer-links
 }
 /* media query use flex-wrap:wrap for covers on home page */
 /* -----------------MEDIA QUERIES----------------------- */
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 767px) {
+  /* ----------------------HEADER------------------------- */
+  .header-section {
+    height: auto;
+    padding: 20px;
+  }
+
+  .header-title {
+    display: none;
+  }
+  .user-input {
+    display: none;
+  }
+
+  /* ---------------SOUNDS FOR THE SOUL SECTION--------------- */
+  .sounds-section {
+    padding: 30px 5vw;
+  }
+
+  .section-title {
+    font-size: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  .product-container {
+    flex-wrap: wrap;
+  }
+
+  .product-card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .product-name {
+    font-size: 18px;
+    bottom: 5px;
+  }
+
+  .our-message {
+    width: 100%;
+    padding: 50px;
+  }
+
+  /* ----------------MIDDLE SECTIONNNNNNNNNN------------------- */
+  .middle-section {
+    padding: 20px 5vw;
+  }
+
+  .middle-title {
+    font-size: 30px;
+    line-height: 60px;
+  }
+
+  .info {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 20px;
+  }
+
+  /* ----------------------SLIDESHOW---------------------------------- */
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 100%;
+  }
+
+  .slidesText {
+    font-size: 12px;
+    padding: 5px 8px;
+    bottom: 5px;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+
+  /* ------------------------------------FOOTER------------------------ */
+  footer {
+    font-size: 16px;
+  }
+
+  footer .footer-content .top-footer .footer-logo {
+    font-size: 24px;
+  }
+
+  footer .footer-content .media-icons a {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+
+  footer .footer-content .footer-box {
+    width: calc(100% / 2 - 10px);
+  }
+
+  .footer-content .footer-links .footer-box .footer-list {
+    font-size: 16px;
+  }
+
+  .footer-content .footer-links .footer-box li a {
+    font-size: 12px;
+  }
+
+  .footer-content .footer-links .input-box input {
+    width: calc(100% + 55px);
+    font-size: 14px;
+  }
+}
 
 @media all and (min-width: 300px) and (max-width: 600px) {
   .best-sellers {
@@ -463,11 +578,9 @@ link-boxes = footer-links
     grid-template-columns: auto auto;
     position: relative;
   }
-  /* .sellers {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-  } */
+  .info {
+    display: none;
+  }
 }
 
 @media all and (min-width: 1024px) and (max-width: 1480px) {

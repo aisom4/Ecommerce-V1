@@ -10,6 +10,7 @@
   height: 100%;
   background: url(photos/recordsbackground.jpeg);
   background-size: contain;
+  margin: 50px;
 }
 
 .image-set {
@@ -17,7 +18,7 @@
   display: block;
   width: 50%;
   height: 100%;
-  background-color: #fff;
+  /* background-color: black; */
   margin: auto;
 }
 
@@ -127,4 +128,152 @@
 }
 .customer-text {
   opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  /* Styles for screens with a maximum width of 768px or less */
+  .image-collage-section {
+    height: 400px;
+    padding: 25px 5vw;
+  }
+
+  .image-collage {
+    margin: 25px;
+  }
+
+  .set-image:nth-child(1) {
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    left: 20px;
+  }
+
+  .set-image:nth-child(2) {
+    width: 150px;
+    height: 150px;
+    top: 100px;
+    left: 100px;
+  }
+
+  .set-image:nth-child(3) {
+    width: 150px;
+    height: 150px;
+    top: 50px;
+    left: 175px;
+  }
+
+  .our-message {
+    width: 70%;
+    font-size: 16px;
+    margin-left: 15%;
+    padding: 50px;
+  }
+
+  .message-title {
+    margin-bottom: 20px;
+  }
+
+  .review-title {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 20px 0;
+  }
+
+  .customer-reviews {
+    padding: 25px 5vw;
+  }
+
+  .review-container {
+    margin: 25px;
+    flex-wrap: wrap;
+  }
+
+  .review-card {
+    width: 200px;
+    margin-bottom: 30px;
+  }
+
+  .ratings {
+    width: 80px;
+    height: 80px;
+  }
+
+  .ratings::after {
+    padding: 3px 15px;
+    right: -15px;
+    font-size: 12px;
+  }
+
+  .customer-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Styles for screens with a maximum width of 480px or less */
+  .image-collage-section {
+    height: 300px;
+    padding: 15px 5vw;
+  }
+
+  .image-collage {
+    margin: 15px;
+  }
+
+  .set-image:nth-child(1) {
+    width: 150px;
+    height: 150px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .set-image:nth-child(2) {
+    width: 120px;
+    height: 120px;
+    top: 80px;
+    left: 60px;
+  }
+
+  .set-image:nth-child(3) {
+    width: 120px;
+    height: 120px;
+    top: 40px;
+    left: 100px;
+  }
+
+  .our-message {
+    width: 80%;
+    font-size: 14px;
+    margin-left: 10%;
+    padding: 40px;
+  }
+
+  .message-title {
+    margin-bottom: 15px;
+  }
+
+  .review-title {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 15px 0;
+  }
+
+  .customer-reviews {
+    padding: 15px 5vw;
+  }
+
+  .review-container {
+    margin: 15px;
+    flex-wrap: wrap;
+  }
+
+  .review-card {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+
+  .ratings {
+    width: 60px;
+    height: 0;
+  }
 }
