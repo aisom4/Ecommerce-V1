@@ -1,0 +1,62 @@
+/* -------------------------Contact Page Styling--------------------------- */
+
+.contact-section {
+  width: 100%;
+  height: 100%;
+  padding: 40px 5vw;
+}
+
+.contact-container {
+  width: 95%;
+  height: 100%;
+  position: relative;
+  padding: 20px;
+  border: 10px solid rgba(255, 0, 0);
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(4, 2, 0, 0.2),
+    0 6px 20px 0 rgba(250, 250, 250, 20);
+}
+
+.section-contact-image {
+  width: 100%;
+  height: 100%;
+  opacity: 60%;
+  position: absolute;
+  z-index: -1;
+  top: 0%;
+  left: 0%;
+}
+
+.contact-info {
+  width: 50%;
+  height: 100%;
+  color: white;
+  border-radius: 15px;
+  background: black;
+  opacity: 80%;
+  display: block;
+  margin-left: auto;
+  padding: 50px;
+  box-shadow: 0 2px 8px 0 rgba(4, 2, 0, 0.2), 0 6px 20px 0 rgba(230, 20, 20, 20);
+  text-align: center;
+  /* border-radius: 50%; */
+}
+
+.contact {
+  display: block;
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 6rem;
+  color: red;
+}
+.contact-title {
+  font-size: 30px;
+  line-height: 100%;
+}
+
+.container {
+  font-size: 1.4rem;
+  height: 95%;
+  width: 95%;
+  position: relative;
+}

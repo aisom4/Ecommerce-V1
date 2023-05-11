@@ -1,0 +1,93 @@
+[
+  {
+    "name": "Aaliyah",
+    "product_image": "photos/productimages/aaliyah.png",
+    "artist": "Aaliyah",
+    "price": 79.99
+  },
+  {
+    "name": "Telefone",
+    "product_image": "photos/productimages/telefone.png",
+    "artist": "NoName",
+    "price": 92.88
+  },
+  {
+    "name": "Funkdafied",
+    "product_image": "photos/productimages/dabrat.png",
+    "artist": "DaBrat",
+    "price": 92.88
+  },
+  {
+    "name": "The Divine Feminine",
+    "product_image": "photos/productimages/divinefemmac.png",
+    "artist": "Mac Miller",
+    "price": 92.88
+  },
+  {
+    "name": "Sick!",
+    "product_image": "photos/productimages/earl.png",
+    "artist": "Earl Sweatshirt",
+    "price": 92.88
+  },
+  {
+    "name": "Lady Lady",
+    "product_image": "photos/productimages/ladylady.png",
+    "artist": "Masego",
+    "price": 92.88
+  },
+  {
+    "name": "Candydrip",
+    "product_image": "photos/productimages/lucky.png",
+    "artist": "Lucky Daye",
+    "price": 92.88
+  },
+  {
+    "name": "Mama's Gun",
+    "product_image": "photos/productimages/mamasgun.png",
+    "artist": "Erykah Badu",
+    "price": 92.88
+  },
+  {
+    "name": "Under Construction",
+    "product_image": "photos/productimages/missy.png",
+    "artist": "Missy Elliot",
+    "price": 92.88
+  },
+  {
+    "name": "My Hero Academia",
+    "product_image": "photos/productimages/myhero.png",
+    "artist": "Yuki Hayashi",
+    "price": 92.88
+  },
+  {
+    "name": "Care for Me",
+    "product_image": "photos/productimages/saba.png",
+    "artist": "Saba",
+    "price": 92.88
+  },
+  {
+    "name": "The Low End Theory",
+    "product_image": "photos/productimages/tribe.png",
+    "artist": "Tribe Called Quest",
+    "price": 92.88
+  },
+  {
+    "name": "Lemonade",
+    "product_image": "photos/productimages/lemonade.png",
+    "artist": "Beyonce",
+    "price": 92.88
+  },
+  {
+    "name": "Mad Villan",
+    "product_image": "photos/productimages/mfdoom.png",
+    "artist": "MF DOOM",
+    "price": 92.88
+  },
+
+  {
+    "name": "Luv is Rage 2",
+    "product_image": "photos/productimages/uzivert.png",
+    "artist": "Lil Uzi Vert",
+    "price": 92.88
+  }
+]

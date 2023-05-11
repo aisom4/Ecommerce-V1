@@ -1,0 +1,57 @@
+/*------------------ PRODUCT PAGE CSS ---------------------------*/
+.best-sellers {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(350px, auto)); */
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-auto-flow: column; */
+
+  justify-content: center;
+  grid-gap: 20px;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  width: 95%;
+  height: 1000px;
+  /* max-width: 1240px; */
+}
+
+.seller {
+  text-align: center;
+
+  align-items: center;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  margin: 30px;
+  border-radius: 20px;
+  position: relative;
+  width: 350px;
+  height: 450px;
+}
+
+.seller img:hover {
+  width: 450px;
+  transform: scale(1.5);
+  /* margin-top: 50px; */
+  cursor: pointer;
+}
+
+.seller img {
+  /* background: black; */
+  transition: transform 0.2s;
+  border-radius: 20px;
+  /* box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15); */
+  width: 100%;
+  height: 100%;
+  object-fit: fit;
+  overflow: hidden;
+  position: relative;
+  bottom: 80px;
+  /* display: block; */
+}
+
+.item-row-2 .item-row-3 .item-row-4 {
+  text-align: center;
+  position: absolute;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 768) {
+}
