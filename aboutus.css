@@ -1,0 +1,130 @@
+/*------------------------- ABOUT US PAGE---------------------------------------------- */
+.image-collage-section {
+  width: 100%;
+  height: 600px;
+  padding: 50px 5vw;
+}
+
+.image-collage {
+  width: 100%;
+  height: 100%;
+  background: url(photos/recordsbackground.jpeg);
+  background-size: contain;
+}
+
+.image-set {
+  position: relative;
+  display: block;
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  margin: auto;
+}
+
+.set-image {
+  position: absolute;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.set-image:hover {
+  transform: translateY(-10px);
+}
+
+.set-image:nth-child(1) {
+  width: 350px;
+  height: 350px;
+  top: 20px;
+  left: 40px;
+}
+
+.set-image:nth-child(2) {
+  width: 250px;
+  height: 250px;
+  top: 200px;
+  left: 200px;
+}
+.set-image:nth-child(3) {
+  width: 250px;
+  height: 250px;
+  top: 100px;
+  left: 350px;
+}
+
+.our-message {
+  text-align: center;
+  height: 100%;
+  width: 50%;
+  background-color: darkred;
+  border-radius: 90%;
+  color: white;
+  font-size: 20px;
+  margin: 10px;
+  margin-left: 25%;
+  padding: 100px;
+}
+.message-title {
+  margin-bottom: 30px;
+}
+
+/* REVIEW SECTION ----------------- */
+
+.review-title {
+  font-size: 20px;
+  line-height: 25px;
+  margin: 30px 0;
+  text-transform: capitalize;
+}
+
+.customer-reviews {
+  padding: 50px 5vw;
+}
+
+.review-container {
+  margin: 50px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-card {
+  width: 250px;
+  height: auto;
+  font-family: "Pinyon Script", cursive;
+}
+
+.ratings {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+}
+
+.ratings img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ratings::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border: 4px solid black;
+  border-radius: 50%;
+}
+
+.ratings::after {
+  content: attr(data-rating);
+  position: absolute;
+  bottom: 0;
+  right: -20px;
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: #d5be8b;
+}
+.customer-text {
+  opacity: 0.7;
+}

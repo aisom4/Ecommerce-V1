@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Slab", serif;
+  font-family: "Pinyon Script", cursive;
+  font-family: "Shadows Into Light", cursive;
+  /* list-style: none;    May need to add this to the top instead of having it in the .navbar*/
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Pinyon Script", cursive;
+  /* background-color: black; */
+  /* body {
+  background-image: linear-gradient(180deg, red, orange, yellow);
+} */
+}
+/* ------------------------NAV BAR STYLING--------------------------------- */
+.navbar {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  z-index: 9;
+  transition: 0.5s;
+  /* background-color: darkred; */
+  opacity: 0.9;
+}
+
+.navBar-container {
+  display: flex;
+  align-items: center;
+
+  list-style: none;
+  justify-content: center;
+}
+
+.nav-links {
+  margin: 10px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.nav-photo {
+  height: 70px;
+  width: 70px;
+}
+.link {
+  font-size: 20px;
+  color: red;
+  padding: 10px;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.nav-links:hover {
+  opacity: 2;
+}
+.link.active,
+.link:hover {
+  opacity: 1;
+}
+/* -------------------------CART & USER IMAGES--------------------- */
+.cart,
+.user-image {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  margin: 10px;
+}
+
+.user-input {
+  display: flex;
+  position: absolute;
+  right: 5vw;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cart-icon,
+.user-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cart-count {
+  font-family: "Josefin Slab", sans-serif;
+  color: #d5be8b;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 50%;
+  background-color: #190c05;
+  position: absolute;
+  bottom: -12px;
+  left: -12px;
+}
+
+/* ------------------------------------FOOTER------------------------ */
+
+footer {
+  font-family: "Courier New", Courier, monospace;
+  /* position: fixed; */
+  color: darkred;
+  background-color: white;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 20px;
+  opacity: 0.9;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100px;
+  height: 1px;
+  width: 100%;
+  background: #afafb6;
+}
+.footer-content {
+  background: black;
+  /* max-width: 1250px; */
+  width: 100vw;
+  margin: auto;
+  padding: 30px 40px 40px 40px;
+}
+
+footer .footer-content .top-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.footer-content .top-footer .footer-logo {
+  color: #fff;
+  font-size: 30px;
+}
+
+.media-icons {
+  display: flex;
+}
+.footer-content .top-footer .media-icons a {
+  height: 40px;
+  width: 40px;
+  margin: 0 8px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.top-footer .media-icons a:nth-child(1) {
+  background: #4267b2;
+}
+.top-footer .media-icons a:nth-child(1):hover {
+  color: #4267b2;
+  background: #fff;
+}
+.top-footer .media-icons a:nth-child(2) {
+  background: #1da1f2;
+}
+.top-footer .media-icons a:nth-child(2):hover {
+  color: #1da1f2;
+  background: #fff;
+}
+.top-footer .media-icons a:nth-child(3) {
+  background: #e1306c;
+}
+.top-footer .media-icons a:nth-child(3):hover {
+  color: #e1306c;
+  background: #fff;
+}
+.top-footer .media-icons a:nth-child(4) {
+  background: #ffff00;
+}
+.top-footer .media-icons a:nth-child(4):hover {
+  color: #ffff00;
+  background: #fff;
+}
+.top-footer .media-icons a:nth-child(5) {
+  background: #ff0000;
+}
+.top-footer .media-icons a:nth-child(5):hover {
+  color: #ff0000;
+  background: #fff;
+}
+
+footer .footer-content .footer-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-content .footer-links .footer-box {
+  /* background-color: darkred; */
+  width: calc(100% / 5 -10px);
+}
+
+.footer-content .footer-links .footer-box .footer-list {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  position: relative;
+}
+.footer-content .footer-links .footer-box li {
+  margin: 6px 0;
+  list-style: none;
+}
+
+.footer-content .footer-links .footer-box li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: akk 0.4s ease;
+}
+
+.footer-links .footer-box .footer-list::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 35px;
+  background: #fff;
+}
+
+.footer-content .footer-links .footer-box li a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.footer-content .footer-links .input-box {
+  margin-right: 55px;
+}
+.footer-content .footer-links .input-box input {
+  height: 40px;
+  width: calc(100% + 55px);
+  outline: none;
+  border: 2px solid #afafb6;
+  background: #140b5c;
+  border-radius: 4px;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.footer-links .input-box input::placeholder {
+  color: #afafb6;
+  font-size: 16px;
+}
+
+.footer-links .input-box input[type="button"] {
+  background: #fff;
+  color: #1da1f2;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 4px 0;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.input-box input[type="button"] {
+  opacity: 1;
+}
+
+/* -----------------MEDIA QUERIES----------------------- */
+
+@media (max-width: 900px) {
+  footer .footer-content .footer-links {
+    flex-wrap: wrap;
+  }
+  footer .footer-content .footer-links .input-box {
+    width: 40%;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 700px) {
+  footer {
+    position: relative;
+  }
+  .footer-content .top-footer .footer-logo {
+    font-size: 26px;
+  }
+  .footer-content .top-footer .media-icons a {
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+    line-height: 35px;
+  }
+  footer .footer-content .footer-links .footer-box {
+    width: calc(100% / 3 -10px);
+  }
+  footer .footer-content .footer-links .input-box {
+    width: 60%;
+  }
+}
+
+@media (max-width: 520) {
+  footer .footer-content .top-footer {
+    flex-direction: column;
+  }
+  footer::before {
+    top: 145x;
+  }
+  .footer-content .top-footer .media-icons {
+    margin-top: 16px;
+  }
+  footer .footer-content .footer-links .footer-box {
+    width: calc(100% / 2 -10px);
+  }
+  footer .footer-content .footer-links .input-box {
+    width: 100%;
+  }
+}
